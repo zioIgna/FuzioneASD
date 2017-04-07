@@ -6,6 +6,10 @@ typedef struct elem{
     struct elem * next;
 } * Lista;
 
+void printList(Lista l);
+
+void printHead(Lista *list, int dim);
+
 Lista fusione(Lista * v, int k);
 
 #endif

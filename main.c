@@ -9,6 +9,7 @@ typedef struct elem{
 int main()
 {
     int i;
+    Lista vett[3];
     Lista l1, l2, l3, l4, temp;
     l1=l2=l3=l4=temp=NULL;
     /*l1*/
@@ -16,7 +17,7 @@ int main()
     newEl->next=NULL;
     newEl->val=-1;
     l1=newEl;
-    for(i=0; i<5; i++){
+    for(i=1; i<6; i++){
         temp=l1;
         if(temp){
             while(temp->next){
@@ -32,9 +33,9 @@ int main()
     /*l2*/
     newEl=(Lista)malloc(sizeof(struct elem));
     newEl->next=NULL;
-    newEl->val=-1;
+    newEl->val=-2;
     l2=newEl;
-    for(i=0; i<5; i++){
+    for(i=1; i<6; i++){
         temp=l2;
         if(temp){
             while(temp->next){
@@ -51,9 +52,9 @@ int main()
     /*l3*/
     newEl=(Lista)malloc(sizeof(struct elem));
     newEl->next=NULL;
-    newEl->val=-1;
+    newEl->val=-3;
     l3=newEl;
-    for(i=0; i<5; i++){
+    for(i=1; i<6; i++){
         temp=l3;
         if(temp){
             while(temp->next){
@@ -71,6 +72,12 @@ int main()
     printList(l2);
     printf("\n");
     printList(l3);
+    printf("\n");
+
+    vett[0]=l1;
+    vett[1]=l2;
+    vett[2]=l3;
+    printHead(vett, 3);
 
     return 0;
 }

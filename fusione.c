@@ -9,6 +9,12 @@ void printList(Lista l){
     }
 }
 
+void printHead(Lista *list, int dim){
+    int i;
+    for(i=0; i<dim; i++)
+        printf("%d ", list[i]->val);
+}
+
 Lista fusione(Lista * v, int k){
     return NULL;
 }
