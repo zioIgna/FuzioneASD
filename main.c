@@ -9,9 +9,11 @@ typedef struct elem{
 int main()
 {
     int i;
+    int intVett[5]={4, 2, 7, 16, 2};
     Lista vett[3];
     Lista l1, l2, l3, l4, temp;
     l1=l2=l3=l4=temp=NULL;
+
     /*l1*/
     Lista newEl=(Lista)malloc(sizeof(struct elem));
     newEl->next=NULL;
@@ -78,6 +80,15 @@ int main()
     vett[1]=l2;
     vett[2]=l3;
     printHead(vett, 3);
+    printf("\n");
+
+    for(i=0; i<5; i++)
+        printf("%d ",intVett[i]);
+    printf("\n");
+    buildMinHeap(intVett, 5);
+    for(i=0; i<5; i++)
+        printf("%d ",intVett[i]);
+    printf("\n");
 
     return 0;
 }
