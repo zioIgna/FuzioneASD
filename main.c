@@ -28,7 +28,7 @@ int main()
         }
 
         Lista newEl=(Lista)malloc(sizeof(struct elem));
-        newEl->val=i*1;
+        newEl->val=i*2;
         newEl->next=NULL;
         temp->next=newEl;
     }
@@ -46,7 +46,7 @@ int main()
         }
 
         newEl=(Lista)malloc(sizeof(struct elem));
-        newEl->val=i*10;
+        newEl->val=i*3;
         newEl->next=NULL;
         temp->next=newEl;
     }
@@ -65,7 +65,7 @@ int main()
         }
 
         newEl=(Lista)malloc(sizeof(struct elem));
-        newEl->val=i*100;
+        newEl->val=i*4;
         newEl->next=NULL;
         temp->next=newEl;
     }
@@ -83,7 +83,7 @@ int main()
         }
 
         newEl=(Lista)malloc(sizeof(struct elem));
-        newEl->val=i*1000;
+        newEl->val=i*5;
         newEl->next=NULL;
         temp->next=newEl;
     }
